@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>    
+        function createSum () {
+            let sum = 0; 
+            return function(num) {
+                sum += num;
+                return sum;
+            };
+        }
+        let suma = createSum ();
+        alert(suma(3));
+        alert(suma(5));
+        alert(suma(20));
+            </script>
 </body>
 </html>
